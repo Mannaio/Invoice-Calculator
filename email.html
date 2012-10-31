@@ -36,45 +36,16 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 		.tr_clone_add { position: absolute; top: 200px; }​ 
 		input { width: 500px; }
 		.editable_select select { width: 560px; font-family: FoundryMonolineLight; }​
-
-		/***********
-		Originally based on The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
-		More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
-		http://www.mailchimp.com &amp; http://www.fabio-carneiro.com
- 
-		INLINE: Yes.
-		***********/
-		/* Client-specific Styles */
 		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */ 
 		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; font-size: 12px;}
 		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
 		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
 		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
-		/* End reset */
-
-		/* Some sensible defaults for images
-		1. "-ms-interpolation-mode: bicubic" works to help ie properly resize images in IE. (if you are resizing them using the width and height attributes)
-		2. "border:none" removes border when linking images.
-		3. Updated the common Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers. You may not always want all of your images to be block elements. Apply the "image_fix" class to any image you need to fix.
-
-		Bring inline: Yes.
-		*/
 		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
 		a img {border:none;}
 		.image_fix {display:block;}
-
-		/** Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: This example recommends 1em. More info on setting web defaults: http://www.w3.org/TR/CSS21/sample.html or http://meiert.com/en/blog/20070922/user-agent-style-sheets/
-
-		Bring inline: Yes.
-		**/
 		p {margin: 1em 0;}
-
-		/** Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black for a non-linked header, blue for a linked header, red for an active header (limited support), and purple for a visited header (limited support).  Replace with your choice of color. The !important is really what is overriding Hotmail's styling. Hotmail also sets the H1 and H2 tags to the same size.
-
-		Bring inline: Yes.
-		**/
-		
 		@font-face {
 			font-family: 'FoundryMonolineLight';
 			src: url('http://codekunstler.com/styles/typefaces/foundrymonoline-light-webfont.eot');
@@ -346,7 +317,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 		</table>
 		<table class="table1" cellpadding="0" cellspacing="0" border="0" align="center">
 			<tr>
-				<td width="800" valign="top"><div style="height: 15px;"><p style="font-family: FoundryMonolineLight, sans-serif;">Santi Grau. Via Augusta 241, 1er. 08021 Barcelona. NIF: 47726820A. Tel: 676153253. info@santigrau.com</p></div></td>
+				<td width="800" valign="top"><div style="height: 15px;"><p style="font-family: FoundryMonolineLight, sans-serif;">Name and Surname. Address, Postal Code. XXXX City. Tel: XXXXXXX. info@email.com</p></div></td>
 			</tr>
 		</table>
 		
@@ -463,7 +434,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 		
 		<table cellpadding="0" cellspacing="0" border="0" align="center">
 			<tr>
-				<td width="800" valign="top"><div style="height: 12px; font-family: FoundryMonolineLight, sans-serif;"><p>Pago mediante tranferencia bancaria al nº de cuenta: 0081-0215-28-0001295240 (Banc Sabadell)</p></div></td>
+				<td width="800" valign="top"><div style="height: 12px; font-family: FoundryMonolineLight, sans-serif;"><p>Transfer to the account number 0081-0215-28-0001295240 (Name Bank)</p></div></td>
 			</tr>
 		</table>
 		<table cellpadding="0" cellspacing="0" border="0" align="center">
@@ -471,18 +442,5 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 				<td width="800" valign="top"><div style="height: 10px;">------------------------------------------------------------------------------------------------------------------------------------------------</div></td>
 			</tr>
 		</table>
-		<!-- End example table -->
-
-		<!-- Yahoo Link color fix updated: Simply bring your link styling inline. -->
-		<a href="http://htmlemailboilerplate.com" target ="_blank" title="Styling Links" style="color: orange; text-decoration: none;"></a>
-
-		<!-- Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add the 'image_fix' class to remove that space below the image.  Make sure to set alignment (don't use float) on your images if you are placing them inline with text.-->
-
-		<!-- Step 2: Working with telephone numbers (including sms prompts).  Use the "mobile_link" class with a span tag to control what number links and what doesn't in mobile clients. -->
-		<span class="mobile_link"></span>
-
-		</td>
-	</tr>
-
 </body>
 </html>
