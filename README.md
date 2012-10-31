@@ -13,4 +13,3 @@ Invoice Calculator made inside a table editable.
 <p>Input numbers for price</p>
 <p>Table Rows cloned</p>
 <p>Script Calculator</p>
-<p>You can test it here:</p>
