@@ -28,7 +28,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 	<title>Your Message Subject or Title</title>
 	<style type="text/css"> 
 		
-		.editable_number input { font-family: FoundryMonolineLight, sans-serif; width: 50px;}
+		.editable_number input { font-family: FoundryMonolineLight, sans-serif; width: 50px; margin: -10px;}
 		.editable_textarea textarea { font-family: FoundryMonolineLight, sans-serif; }
 		.editable_textarea_factura textarea { font-family: FoundryMonolineUltraLight, sans-serif; font-size: 25pt;}
 		h2.editable_text_titulo input { font-family: FoundryMonolineLight, sans-serif; font-size: 30pt; line-height: 1em; margin: -15px 0px; height: 55px;}
@@ -216,7 +216,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 	    $('.editable_number').editable(function(value, settings) { return(value); }, {
 	      type    : 'number',
 	      onblur : "submit",
-	      placeholder: 'Importe',
+	      placeholder: 'Edit Importe',
 	      style  : "inherit",
 	      callback: function() {
 	        tally('p#subtotal');
@@ -228,7 +228,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 	     type    : 'textarea',
 	     width: '200',
 	     height: '15',
-	     placeholder: 'Concepto',
+	     placeholder: 'Edit Concepto',
 	     onblur : "submit",
 	     style  : "inherit"
 	     });    
